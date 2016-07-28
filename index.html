@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+<script src="typed.js"></script>
+<script>
+  $(function() {
+      $(".first").typed({
+        strings: ["Hello!", "I'm Ben and I'm a"],
+        typeSpeed: 1,
+        startDelay: 500,
+        callback: function() {
+          $(".typed-cursor").remove();
+          $('.second').typed({
+            strings: ["product designer"],
+            typeSpeed: 1,
+            callback: function() {
+              $(".second").css("color","#4CAF50");
+              $(".typed-cursor").remove();
+            }
+          });
+        }
+    });
+  });
+</script>
+<body>
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+        <source src="./images/sun.mp4" type="video/mp4">
+    </video>
+    <div class="blah">
+      <div class="nav">
+        <ul>
+         <li><a href="#" title="about-me">About Me</a></li>
+         <li><a href="#" title="portfolio">Portfolio</a></li>
+         <li><a href="#" title="resume">Resume</a></li>
+         <li><a href="#" title="blog">Blog</a></li>
+       </ul>
+     </div>
+    </div>
+    <div class="card">
+      <div class="profile-image">
+        <img class="img-circle" src="./images/me.jpeg">
+      </div>
+      <div class="intro">
+        <span class="first"></span>
+        <span class="second"></span>
+        <div class="statement">
+          I'm a junior studying computer enginering at the University of Illinois.
+          I'm obsessed with understanding the user and designing and developing
+          delightful user experiences.
+        </div>
+        <div class="interests">
+          <div class="tech-news">
+            Gizmodo, Engadget, DroidLife, Wirecutter, Cnet
+          </div>
+          <div class="music">
+            Frank Ocean
+          </div>
+          <div class="tv-shows">
+            Black Mirror, Mad Men, Avatar the Last Airbender
+          </div>
+          <div class="books">
+            Design of every day things, the god effect
+          </div>
+          <div class="dogs">
+          </div>
+        </div>
+        <div class="social">
+          <span><img class="twitter" src="./images/twitter.png" href="#"></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

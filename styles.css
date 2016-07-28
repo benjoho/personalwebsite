@@ -1,0 +1,131 @@
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 90%;
+  width: 65%;
+  margin-top: 2rem;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+}
+.blah {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  top: .5rem;
+  height: 65px;
+  width: 65%;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+}
+ul {
+  padding-top: 5px;
+  list-style-type: none;
+}
+li {
+  margin: 5rem;
+  display: inline;
+}
+a {
+  color: black;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 13pt;
+  text-decoration: none;
+}
+.intro {
+  width: 600px;
+  font-size: 30pt;
+  font-family: Helvetica;
+  font-weight: lighter;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+.first {
+  height: 30pt;
+}
+.second {
+  font-size: 30pt
+}
+.typed-cursor{
+    font-size: 30pt;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+.statement {
+  font-size: 13pt;
+  margin-top: 1rem;
+  font-weight: lighter;
+  font-family: Helvetica;
+}
+.img-circle {
+    display: inline-block;
+    margin-bottom: 40pt;
+    margin-top: 40pt;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.fullscreen-bg {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+.fullscreen-bg__video {
+  opacity: .65;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.twitter {
+  width: 50px;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('./images/mountain.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
